@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <button id="back-button" class="hidden">Back</button>
+    <button id="volume-button" class="hidden">🔊</button>
+    <div class="container">
+        <h1>Countdown Timer</h1>
+        <div id="tab1" class="tab-content active">
+            <div class="input-container">
+                <div class="title-container">
+                    <input type="text" id="title-input" placeholder="Enter event title" />
+                </div>
+            </div>
+            <div class="date-time-container">
+                <div class="date-container">
+                    <label for="date-picker">Select Date:</label>
+                    <input type="date" id="date-picker" />
+                </div>
+                <div class="time-container">
+                    <label for="time-picker">Select Time:</label>
+                    <input type="time" id="time-picker" />
+                </div>
+            </div>
+            <button id="start-button">Start Countdown</button>
+        </div>
+        <div id="tab2" class="tab-content hidden">
+            <div id="event-details">
+                <h2 id="event-title"></h2>
+            </div>
+            <div id="countdown">
+                <div class="time-box" id="days-box">
+                    <span id="days">00</span>
+                    <span class="label">Days</span>
+                </div>
+                <div class="time-box" id="hours-box">
+                    <span id="hours">00</span>
+                    <span class="label">Hours</span>
+                </div>
+                <div class="time-box" id="minutes-box">
+                    <span id="minutes">00</span>
+                    <span class="label">Minutes</span>
+                </div>
+                <div class="time-box" id="seconds-box">
+                    <span id="seconds">00</span>
+                    <span class="label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="alarm-sound" src="Alarm sound.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
